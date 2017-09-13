@@ -1,0 +1,13 @@
+1. List the HDFS contents of /user
+	See screenshot
+
+2. Inspect the output of the HDFS admin report and answer the following questions in a text file.
+
+Q1: How many live datanodes are there?
+	1
+
+Q2: How much non-DFS storage is used?
+	5.1 GB
+
+Q3: How much DFS storage is used?
+	136.86 MB
