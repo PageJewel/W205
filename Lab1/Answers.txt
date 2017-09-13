@@ -6,7 +6,7 @@ Q2: When would you consider a cloud infrastructure for your data science tasks?
 	For companies, it allows them to avoid large upfront capital costs in favor of lower variable costs, and have an easy way to scale their infrastructure over time as they grow.
 
 Q3: What is the difference between spot instances and reserved instances?
-	Spot instances are used when your workload needs are unknown or variable. With spot instances, you pay for the capacity that you use on-demand. Reserved instances allow you to make capacity commitments for workloads that are fairly stable and long term. These come in 1 or 3 year commitments, but can allow you to save up to 75% compared to on-demand pricing used for spot instances.
+	On-demand has a certain pricing based on computing time used, and this can be used when your workload needs are unknown or variable. With spot instances, you bid into the spot market for computing capacity with a max price you're willing to pay. Based on current usage, these prices can be lower than on-demand computing, but can be interrupted or capacity might not be available at a given point in time. Reserved instances allow you to buy capacity commitments for workloads that are fairly stable and long term. These come in 1 or 3 year commitments, but can allow you to save up to 75% compared to on-demand pricing.
 
 Q4: List the names of four software packages installed on the UCB AMI
 	Python 2.6.6
