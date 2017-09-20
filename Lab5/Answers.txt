@@ -1,0 +1,18 @@
+Question 1: What is the output of \dt?
+See screenshot 'databaseTablesOutput' for list of 21 tables.
+
+Question 2: What is the schema for the customer table?
+Customer table is in schmea public. It's schema definition of the customer table is in screenshot 'customerSchema' with the definitions of columns, data types, indexes, and foreign keys.
+
+
+Question 3: What similarities do you see in the explain plains for these 3 queries?
+All three queries involve a sequence scan on the table being queried. For the second two that query the payments table, this is broken into sequence scans on the table's partions and then appended together, while the first query against the customer table does not.
+
+Question 4: What is the difference between the plans for the Partitioned table and the union query? Why do you think this difference exists?
+The two plans are very similar. However, there are a couple differences:
+- the union query includes two hash aggregate operations, while the query on the partitioned table only includes one. I believe that this means the union query is doing an aggregation as part of the union query, and then a second to actually calculate the sums of amount by customer_id.
+- when it is doing the sequence scans and appending information, the union query has a width of 28 while the parition has a width of 10 because the union subquery requires all columns to be returned initially, and the partition query already knows that only the customer_id and amount columns are required
+
+Question 5: What join algorithm is used for the inner join?
+A hash join is used for the inner join.
+
