@@ -9,7 +9,7 @@ Hive launched two map-reduce jobs. SparkSQL did not specifically record launchin
 Question 3. Write a query which joins weblogs_parquet to user_info and counts the top 5 locations. List the locations.
 I was not entirely sure of the join criteria that I should be using. I noticed that the user_info table was not unique on user_id, which means that some rows are duplicated when joining only on user_id between the tables. This duplication did not seem extreme though (the number of records increased from 40,002 in weblogs_parquet to 40,250 when joined to user_info on user_id. Another thing I noticed here is that there were a lot of user_id values in weblog_parquet that did not have a matching record in user_info (35,553). However, none of the other fields made sense as a join criteria. Here is the query that I was using to join the two:
 
-select ui.location, count() as location_count
+select ui.location, count(*) as location_count
 from weblogs_parquet wp
 left join user_info ui
 on wp.user_id = ui.user_id
