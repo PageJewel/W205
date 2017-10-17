@@ -1,0 +1,13 @@
+SUBMISSION 1: Create an RDD with tuples were the there is a key and a value. But in contrast to the example above the key is removed from the value portion of the key-value tuple. Submit the code and a print out of the first tuple.
+
+narcoticsCrimeTuplesCorrect = narcoticsCrimes.map(lambda x:(x.split(",")[0], ",".join(x.split(",")[1:])))
+
+See screenshot for print out of the first tuple.
+
+
+SUBMISSION 2: Submit the the code for executing the above query as a Spark SQL python call. Also submit the number of rows in the result
+
+results = sqlContext.sql('SELECT count(*) FROM Web_Session_Log WHERE refererurl = "http://www.ebay.com"')
+results.show()
+
+Number of results was 3943
