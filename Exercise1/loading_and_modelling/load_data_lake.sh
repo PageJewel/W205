@@ -10,9 +10,6 @@ tail -n +2 "Timely and Effective Care - State.csv" > effective_care_state.csv
 tail -n +2 "Hospital General Information.csv" > hospital_info.csv
 tail -n +2 "hvbp_hcahps_05_28_2015.csv" > survey_responses.csv
 
-# Switch user
-su - w205
-
 # create hdfs folder structure
 hdfs dfs -mkdir /user/w205/hospital_compare
 hdfs dfs -mkdir /user/w205/hospital_compare/readmit_deaths_hospital
