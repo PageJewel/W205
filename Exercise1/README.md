@@ -9,7 +9,8 @@
 4. Open permissions on these files so the w205 user can access them. Type `chmod 007 *`. Also grant access to the entire folder so w205 can create files - `chmod 007 ../data/`.
 
 # Clean the data files and load into HDFS directory
-4. Start Hadoop and postgres in EC2 instance. Switch to w205 user by typing `su - w205`. Start Hive metastore in EC2 instance.
-5. Go to Exercise1/loading_and_modelling, and type `. load_data_lake.sh`. This processes the data files and loads them into the hdfs file structure. It also switches the user from root to w205 as it begins the hdfs steps.
+5. Start Hadoop and postgres in EC2 instance. Switch to w205 user by typing `su - w205`. Start Hive metastore in EC2 instance.
+6. Go to Exercise1/loading_and_modelling, and type `. load_data_lake.sh`. This processes the data files and loads them into the hdfs file structure.
+7. Type `hive -f hive_base_ddl.sql`. This creates the Hive metadata for the tables.
 
 # Transform the data
