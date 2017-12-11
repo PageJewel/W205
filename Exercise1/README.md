@@ -14,3 +14,9 @@
 7. Type `hive -f hive_base_ddl.sql`. This creates the Hive metadata for the tables.
 
 # Transform the data
+8. Go to Exercise1/transforming.
+9. Type `hive -f hospitals.sql`. This creates the hospitals table from the ER diagram.
+10. Type `hive -f hospital_procedure_scores_temp.sql`. This generates an intermediate cleaned table of scores by measure for each hospital.
+11. Type `hive -f procedures.sql`. This creates the procedures table from the ER diagram.
+12. Type `hive -f hospital_procedure_scores.sql`. This creates the final hospital_procedure_scores table from the ER diagram.
+13. Type `hive -f survey_responses.sql`. This creates the survey_results table from the ER diagram.
