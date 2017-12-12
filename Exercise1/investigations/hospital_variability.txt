@@ -1,0 +1,6 @@
+Justification for Approach:
+I started from clean data that was limited to comparable hospitals with data of sufficient quality for the subset of measures that represent procedures that should be included in an average quality of care score. For more details on the assumptions during the cleaning process, please see the 'Architecture Design' document.
+
+From the clean data, I calculated the standard deviation across all hospitals for each procedure. I used the standard deviation as the measure of variability for the procedure across hospitals because it takes into account the full spread of the data rather than something like the range, which just looks at the maximum and minimum points.
+
+Results:
