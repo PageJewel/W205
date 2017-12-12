@@ -6,3 +6,14 @@ From the clean data, I calculated the mean and standard deviation across all hos
 My next step was to take the mean standardized scores for each state across all hospital-procedures, and then to subtract the standard deviation across all hospital-procedure data points for that state. This metric was used to rank the states on their consistent delivery of high-quality care for all states with at least 25 data points. The mean score represented the average quality of care delivered in the state, and the incorporation of the standard deviation metric took into account the consistency. This way a state with a high average score but a large variability will not be ranked as highly as a state with a slightly lower average score but a much lower variability across procedures.
 
 Results:
+state	overall_standardized_score	sd_standardized_score	sd_below_overall_standardized_score
+ME      0.22991894129096746     0.671793740723091       -0.4418747994321235
+DE      0.1937649204356956      0.6855989529204387      -0.4918340324847431
+NH      0.20684642110185647     0.730194284233031       -0.5233478631311745
+UT      0.2317857185069642      0.7657681273498501      -0.533982408842886
+CO      0.23145931926433513     0.8084153727103757      -0.5769560534460405
+WI      0.17903338190846588     0.8125964627895973      -0.6335630808811314
+CT      0.09223072907436859     0.7782380831957514      -0.6860073541213828
+MA      0.1374654540372822      0.8268188468744242      -0.689353392837142
+NE      0.11201049089499085     0.8020110205697596      -0.6900005296747688
+NC      0.09948917081315509     0.8073278950188925      -0.7078387242057373

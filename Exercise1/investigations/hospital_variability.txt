@@ -4,3 +4,14 @@ I started from clean data that was limited to comparable hospitals with data of 
 From the clean data, I calculated the standard deviation across all hospitals for each procedure. I used the standard deviation as the measure of variability for the procedure across hospitals because it takes into account the full spread of the data rather than something like the range, which just looks at the maximum and minimum points.
 
 Results:
+measure_id	measure_name	sd_score
+OP_3b   Median Time to Transfer to Another Facility for Acute Coronary Intervention     29.479326601050527
+STK_4   Thrombolytic Therapy    21.954194561164023
+OP_23   Head CT results 21.844653491103774
+OP_20   Door to diagnostic eval 16.882052975576602
+IMM_3_FAC_ADHPCT        Healthcare workers given influenza vaccination  16.3612481787747
+VTE_5   Warfarin therapy discharge instructions 16.30300466996529
+IMM_2   Immunization for influenza      11.847478531140545
+HF_1    Discharge instructions  11.827981182220096
+STK_6   Discharged on Statin Medication 10.037311540967659
+PN_6    Initial antibiotic selection for CAP in immunocompetent patient 9.384295774331745
