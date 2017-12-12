@@ -10,7 +10,7 @@ FROM readmit_deaths_hospital rd
 INNER JOIN hospitals h
 	on rd.provider_id = h.provider_id
 WHERE score NOT LIKE "%Not Available%"
-UNION
+UNION ALL
 SELECT
   ec.provider_id,
   ec.measure_id,

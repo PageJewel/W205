@@ -8,7 +8,7 @@ SELECT DISTINCT
   null AS condition,
   -1 AS direction_better_score
 FROM readmit_deaths_hospital rd
-UNION
+UNION ALL
 SELECT DISTINCT
   ec.measure_id,
   ec.measure_name,
@@ -26,7 +26,7 @@ SELECT
   proc.condition,
   MIN(score.score) AS min_score,
   MAX(score.score) AS max_score,
-  AVERAGE(score.score) AS avg_score,
+  AVG(score.score) AS avg_score,
   STDDEV_POP(score.score) AS sd_score,
   proc.direction_better_score
 FROM temp_procedures proc

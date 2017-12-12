@@ -20,3 +20,10 @@
 11. Type `hive -f procedures.sql`. This creates the procedures table from the ER diagram.
 12. Type `hive -f hospital_procedure_scores.sql`. This creates the final hospital_procedure_scores table from the ER diagram.
 13. Type `hive -f survey_responses.sql`. This creates the survey_results table from the ER diagram.
+
+# Return results
+14. Go to Exercise1/investigations.
+15. Type `hive -f best_hospitals.sql` to return the top 10 hospitals with consistently high quality
+16. Type `hive -f best_states.sql` to return the top 10 states with consistently high quality
+17. Type `hive -f hospital_variability.sql` to return the top 10 procedures with the most variation between hospitals
+18. Type `hive -f hospitals_and_patients.sql` to return the results of whether average scores for hospital quality or procedural variability are correlated with patient survey responses.
