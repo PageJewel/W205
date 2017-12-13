@@ -23,7 +23,7 @@
 
 # Return results
 14. Go to Exercise1/investigations.
-15. Type `hive -f best_hospitals.sql` to return the top 10 hospitals with consistently high quality
-16. Type `hive -f best_states.sql` to return the top 10 states with consistently high quality
-17. Type `hive -f hospital_variability.sql` to return the top 10 procedures with the most variation between hospitals
-18. Type `hive -f hospitals_and_patients.sql` to return the results of whether average scores for hospital quality or procedural variability are correlated with patient survey responses.
+15. Type `hive -f best_hospitals/best_hospitals.sql` to return the top 10 hospitals with consistently high quality
+16. Type `hive -f best_states/best_states.sql` to return the top 10 states with consistently high quality
+17. Type `hive -f hospital_variability/hospital_variability.sql` to return the top 10 procedures with the most variation between hospitals
+18. Type `hive -f hospitals_and_patients/hospitals_and_patients.sql` to return the results of whether average scores for hospital quality or procedural variability are correlated with patient survey responses.
